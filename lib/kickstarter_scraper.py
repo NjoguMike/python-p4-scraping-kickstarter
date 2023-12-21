@@ -10,7 +10,7 @@ import ipdb
 
 def create_project_dict():
     html = ''
-    with open('./fixtures/kickstarter.html') as file:
+    with open('../fixtures/kickstarter.html') as file:
         html = file.read()
     kickstarter = BeautifulSoup(html, 'html.parser')
     projects = {}
